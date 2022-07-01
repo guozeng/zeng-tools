@@ -1,11 +1,11 @@
 {
   "name": "gen-rules",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "type": "module",
   "bin": {
-    "create-vite": "index.js",
-    "cva": "index.js"
+    "gen-rules": "bin/index.js",
+    "gr": "bin/index.js"
   },
   "files": [
     "dist",
