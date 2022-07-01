@@ -1,2 +1,13 @@
+.DS_Store
+.idea
+*.cpuprofile
+*.local
+*.log
+/.vscode/
 dist
+dist-*
+node_modules
+temp
+TODOs.md
+.eslintcache
 .npmrc
