@@ -3,4 +3,5 @@
 - prettier配置
 - eslint配置
 - commitlint配置
-- 校管家的ci/cd配置
+- ci/cd配置
+- 其他文件
