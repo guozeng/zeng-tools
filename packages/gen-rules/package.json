@@ -1,0 +1,21 @@
+{
+  "name": "gen-rules",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "bin": {
+    "create-vite": "index.js",
+    "cva": "index.js"
+  },
+  "files": [
+    "dist",
+    "bin/index.js"
+  ],
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "guozeng",
+  "license": "MIT"
+}
