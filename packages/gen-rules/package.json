@@ -16,5 +16,13 @@
   },
   "keywords": [],
   "author": "guozeng",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guozeng/zeng-tools.git",
+    "directory": "packages/gen-rules"
+  },
+  "bugs": {
+    "url": "https://github.com/guozeng/zeng-tools/issues"
+  }
 }
