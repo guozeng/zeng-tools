@@ -2,8 +2,11 @@
   "name": "zeng-tools",
   "version": "1.0.0",
   "description": "一个开发工具包",
-  "private":"true",
+  "private": "true",
   "keywords": [],
   "author": "guozeng",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
 }
