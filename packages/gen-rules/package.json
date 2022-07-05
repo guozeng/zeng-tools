@@ -1,6 +1,6 @@
 {
   "name": "gen-rules",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "",
   "bin": {
     "gen-rules": "bin/index.js",
@@ -24,5 +24,8 @@
   },
   "bugs": {
     "url": "https://github.com/guozeng/zeng-tools/issues"
+  },
+  "devDependencies": {
+    "rollup": "^2.75.7"
   }
 }
