@@ -1,31 +1,28 @@
-import { exec } from 'child_process'
+import { writeFileSync } from 'fs'
 
-// git移除某文件的版本控制
-// git rm -r --cached 文件
-// 命令： gr git-rmv 文件
+const cwd = process.cwd()
+const gitignore = `.DS_Store
+.idea
+*.cpuprofile
+*.local
+*.log
+/.vscode/
+dist
+dist-*
+node_modules
+temp
+TODOs.md
+.eslintcache
+.npmrc
+pnpm-lock.yaml
+test
+`
 
-// git log
-// git log --graph --oneline --decorate
-// 命令： gr git-prettylog
-
-function spawnFn(options: { [x: string]: string } & { _: string[] }) {
-  const command = options._[0]
+function fn(command: string) {
   switch (command) {
-    case 'git-rmv':
-      const files = options._[1] || '.'
-      exec(`git rm -r --cached ${files}`, (err, stdout, stderr) => {
-        if (err) {
-          return
-        }
-        console.log(stdout)
-      })
-      break
-    case 'git-prettylog':
-      exec(`git log --graph --oneline --decorate`, (err, stdout, stderr) => {
-        if (err) {
-          return
-        }
-        console.log(stdout)
+    case 'git-ignore':
+      writeFileSync(`${cwd}/.gitignore`, gitignore, {
+        encoding: 'utf-8',
       })
       break
     default:
@@ -33,4 +30,4 @@ function spawnFn(options: { [x: string]: string } & { _: string[] }) {
   }
 }
 
-export = spawnFn
+export = fn
