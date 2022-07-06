@@ -17,3 +17,5 @@ commitizen  git提交提示
 changelog
 husky  git hooks
 lint-staged
+
+- simple-git-hooks 适用
