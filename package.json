@@ -6,7 +6,11 @@
   "keywords": [],
   "author": "guozeng",
   "license": "ISC",
+  "scripts": {
+    "format": "prettier --write packages/**/src"
+  },
   "devDependencies": {
+    "husky": "^8.0.1",
     "prettier": "^2.7.1",
     "typescript": "^4.7.4"
   }
