@@ -7,11 +7,15 @@
   "author": "guozeng",
   "license": "ISC",
   "scripts": {
-    "format": "prettier --write packages/**/src"
+    "format": "prettier --write --cache packages/**/src"
   },
   "devDependencies": {
-    "husky": "^8.0.1",
     "prettier": "^2.7.1",
+    "simple-git-hooks": "^2.8.0",
     "typescript": "^4.7.4"
+  },
+  "packageManager": "pnpm@7.5.0",
+  "simple-git-hooks": {
+    "pre-commit": "npm run  format"
   }
 }
