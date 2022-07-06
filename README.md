@@ -10,3 +10,10 @@
 - 三种不同模块的声明文件
 - 三斜线指令
 - 模块扩展
+
+
+@commint/{cli, } commit-msg 格式检查
+commitizen  git提交提示
+changelog
+husky  git hooks
+lint-staged
