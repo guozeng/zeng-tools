@@ -26,7 +26,6 @@ function fn(command: string) {
       })
       break
     default:
-      
   }
 }
 

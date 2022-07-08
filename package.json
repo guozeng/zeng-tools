@@ -30,11 +30,11 @@
     "pre-commit": "pnpm exec lint-staged --concurrent false"
   },
   "lint-staged": {
-    "*": [
-      "prettier --write --cache --ignore-unknown"
-    ],
     "./**": [
       "eslint --cache --fix"
+    ],
+    "*": [
+      "prettier --write --cache --ignore-unknown"
     ]
   }
 }
