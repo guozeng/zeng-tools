@@ -22,11 +22,10 @@ function fn(command: string) {
   switch (command) {
     case 'git-ignore':
       writeFileSync(`${cwd}/.gitignore`, gitignore, {
-        encoding: 'utf-8',
+        encoding: 'utf-8'
       })
       break
     default:
-      return
   }
 }
 

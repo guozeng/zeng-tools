@@ -68,7 +68,7 @@ const cwd = process.cwd()
 cli.version(
   JSON.parse(
     readFileSync(`${cwd}/package.json`, {
-      encoding: 'utf-8',
+      encoding: 'utf-8'
     })
   ).version
 )

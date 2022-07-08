@@ -38,13 +38,13 @@ const vscodeSettings = `{
 
 export = (formatOnSave?: boolean) => {
   writeFileSync(`${cwd}/.prettierrc.js`, prettierConfig, {
-    encoding: 'utf-8',
+    encoding: 'utf-8'
   })
   writeFileSync(`${cwd}/.prettierignore`, prettierIgnore, {
-    encoding: 'utf-8',
+    encoding: 'utf-8'
   })
   writeFileSync(`${cwd}/.editorconfig`, editorConfig, {
-    encoding: 'utf-8',
+    encoding: 'utf-8'
   })
 
   if (formatOnSave) {
@@ -52,7 +52,7 @@ export = (formatOnSave?: boolean) => {
       mkdirSync(`${cwd}/.vscode`)
     }
     writeFileSync(`${cwd}/.vscode/settings.json`, vscodeSettings, {
-      encoding: 'utf-8',
+      encoding: 'utf-8'
     })
   }
 }

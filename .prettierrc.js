@@ -8,4 +8,5 @@ module.exports = {
   singleAttributePerLine: false,
   htmlWhitespaceSensitivity: 'ignore',
   arrowParens: 'always',
+  trailingComma: 'none'
 }
